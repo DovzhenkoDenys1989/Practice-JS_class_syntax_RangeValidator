@@ -22,7 +22,7 @@ class RangeValidator{
   }
 
   get range(){
-    return Array.from(this.from + this.to);
+    return new Array (this.from + this.to);
   }
 
 
@@ -34,8 +34,8 @@ class RangeValidator{
     }
   }
 }
-const time = new RangeValidator(2, 10);
-console.log(time);
+const numeric = new RangeValidator(2, 10);
+console.log(numeric);
 
 
 
