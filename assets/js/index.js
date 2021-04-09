@@ -22,7 +22,7 @@ class RangeValidator{
   }
 
   get range(){
-    return new Array (this.from + this.to);
+    return [this.from, this.to];
   }
 
 
