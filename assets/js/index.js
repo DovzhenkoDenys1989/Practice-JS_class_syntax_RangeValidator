@@ -2,12 +2,12 @@
 
 class RangeValidator {
   constructor(from, to) {
-    this._from = from;
-    this._to = to;
+    this.from = from;
+    this.to = to;
   }
   set from(newFrom) {
-    if(typeof from !== 'number'){
-      throw new TypeError('Error not a number');
+    if (typeof newFrom !== "number") {
+      throw new TypeError("Error not a number");
     }
     this._from = newFrom;
   }
@@ -17,8 +17,8 @@ class RangeValidator {
   }
 
   set to(newTo) {
-    if(typeof to !== 'number'){
-      throw new TypeError('Error not a number');
+    if (typeof newTo !== "number") {
+      throw new TypeError("Error not a number");
     }
     this._to = newTo;
   }
