@@ -6,6 +6,9 @@ class RangeValidator {
     this._to = to;
   }
   set from(newFrom) {
+    if(typeof from !== 'number'){
+      throw new TypeError('Error not a number');
+    }
     this._from = newFrom;
   }
 
@@ -14,6 +17,9 @@ class RangeValidator {
   }
 
   set to(newTo) {
+    if(typeof to !== 'number'){
+      throw new TypeError('Error not a number');
+    }
     this._to = newTo;
   }
 
